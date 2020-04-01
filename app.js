@@ -1,10 +1,14 @@
 let express = require("express");
 let app = express();
+var path = require('path');
 let cors = require("cors");
 const axios = require('axios').default;
 let gov = require('./gov');
+app.use(express.static(__dirname));
+
 
 app.use(cors());
+
 
 var port = process.env.PORT || 3000;
 app.listen(port,"0.0.0.0",function(){
