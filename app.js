@@ -27,7 +27,6 @@ var dados = JSON.parse(callback);
 console.log(dados.results[0].total_confirmado);
    res.end();
 })
-  
 })
 
 
