@@ -21,6 +21,7 @@ app.use(bodyParser.json())
 
 app.get('/cases', (req, res) => {
 gov.gov(function(callback){
+    console.log(callback);
     res.send(callback);
 var dados = JSON.parse(callback);
 
