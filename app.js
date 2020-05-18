@@ -24,8 +24,6 @@ gov.gov(function(callback){
     console.log(callback);
     res.send(callback);
 var dados = JSON.parse(callback);
-
-console.log(dados.results[0].total_confirmado);
    res.end();
 })
   
